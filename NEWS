@@ -1,0 +1,19 @@
+2022.1.18
+
+Set ARMA_DONT_PRINT_ERRORS in src/*.cpp files to avoid win-builder
+NOTE Found '_ZSt4cerr', possibly from 'std::cerr' (C++).
+
+2021.10.26
+
+Vignettes: compare_depmixS4, multiple_sequences.
+
+2021.10.18
+
+New functions multiply, pairwise, transition, viterbi.
+
+Transition and initial probability parameter arguments are now in log
+space, to avoid underflow.
+
+2021.10.15
+
+Initial version with forward and backward algorithms.
