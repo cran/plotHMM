@@ -305,8 +305,8 @@ microbenchmark::microbenchmark(depmixS4={
 }, times=5)  
 #&gt; Unit: microseconds
 #&gt;      expr   min    lq    mean median    uq     max neval
-#&gt;  depmixS4  87.0  93.6  111.98   96.3 136.8   146.2     5
-#&gt;   plotHMM 285.2 286.0 8230.54  289.7 295.1 39996.7     5
+#&gt;  depmixS4  86.8  94.0  118.76  102.2 130.8   180.0     5
+#&gt;   plotHMM 286.8 288.2 8335.18  291.0 295.5 40514.4     5
 </code></pre>
 
 <p>plotHMM is 2-3x slower than depmixS4. Possibly due to (1) overhead of
@@ -323,8 +323,8 @@ computations are slower than scaling.</p>
 }, times=5)
 #&gt; Unit: microseconds
 #&gt;      expr    min     lq    mean median     uq    max neval
-#&gt;  depmixS4 2556.4 2625.7 2661.58 2695.3 2705.8 2724.7     5
-#&gt;   plotHMM   11.3   13.0   27.70   13.5   24.9   75.8     5
+#&gt;  depmixS4 2732.9 4145.1 4145.80 4218.1 4758.0 4874.9     5
+#&gt;   plotHMM   11.6   13.2   31.88   13.8   29.8   91.0     5
 </code></pre>
 
 <p>plotHMM is about 100x faster than depmixS4, because of the overhead of

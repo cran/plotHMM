@@ -1,6 +1,6 @@
 #define ARMA_DONT_PRINT_ERRORS
-#include <armadillo>
-#include <math.h>
+#include <RcppArmadillo.h>// or <armadillo>
+#include <math.h>//for INFINITY
 #include "viterbi.h"
 #include "eln.h"
 

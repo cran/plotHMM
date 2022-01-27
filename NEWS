@@ -1,3 +1,11 @@
+2022.1.25
+
+Use #include <RcppArmadillo.h> in src/*.cpp files instead of
+<armadillo> to avoid g++ compilation warnings such as "violates the
+C++ One Definition Rule [-Wodr]" on CRAN LTO Additional check.  Note
+that most src/*.cpp files are still portable, you would just need to
+change back to <armadillo> (no Rcpp data types used).
+
 2022.1.18
 
 Set ARMA_DONT_PRINT_ERRORS in src/*.cpp files to avoid win-builder

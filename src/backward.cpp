@@ -1,5 +1,5 @@
 #define ARMA_DONT_PRINT_ERRORS
-#include <armadillo>
+#include <RcppArmadillo.h>// or <armadillo>
 #include <math.h>//for INFINITY, 
 #include "backward.h"
 #include "eln.h"
