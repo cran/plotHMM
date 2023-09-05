@@ -1,27 +1,25 @@
-2022.1.25
+Changes in version 2023.8.28
 
-Use #include <RcppArmadillo.h> in src/*.cpp files instead of
-<armadillo> to avoid g++ compilation warnings such as "violates the
-C++ One Definition Rule [-Wodr]" on CRAN LTO Additional check.  Note
-that most src/*.cpp files are still portable, you would just need to
-change back to <armadillo> (no Rcpp data types used).
+- Convert NEWS.
+- Use Suggests conditionally.
 
-2022.1.18
+Changes in version 2022.1.25
 
-Set ARMA_DONT_PRINT_ERRORS in src/*.cpp files to avoid win-builder
-NOTE Found '_ZSt4cerr', possibly from 'std::cerr' (C++).
+- Use #include <RcppArmadillo.h> in src/*.cpp files instead of <armadillo> to avoid g++ compilation warnings such as "violates the C++ One Definition Rule [-Wodr]" on CRAN LTO Additional check.  Note that most src/*.cpp files are still portable, you would just need to change back to <armadillo> (no Rcpp data types used).
 
-2021.10.26
+Changes in version 2022.1.18
 
-Vignettes: compare_depmixS4, multiple_sequences.
+- Set ARMA_DONT_PRINT_ERRORS in src/*.cpp files to avoid win-builder NOTE Found '_ZSt4cerr', possibly from 'std::cerr' (C++).
 
-2021.10.18
+Changes in version 2021.10.26
 
-New functions multiply, pairwise, transition, viterbi.
+- Vignettes: compare_depmixS4, multiple_sequences.
 
-Transition and initial probability parameter arguments are now in log
-space, to avoid underflow.
+Changes in version 2021.10.18
 
-2021.10.15
+- New functions multiply, pairwise, transition, viterbi.
+- Transition and initial probability parameter arguments are now in log space, to avoid underflow.
 
-Initial version with forward and backward algorithms.
+Changes in version 2021.10.15
+
+- Initial version with forward and backward algorithms.

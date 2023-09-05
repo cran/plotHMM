@@ -1,4 +1,4 @@
-#define ARMA_DONT_PRINT_ERRORS
+#define ARMA_WARN_LEVEL 1
 #include <RcppArmadillo.h>// or <armadillo>
 #include <math.h>//for INFINITY, 
 #include "backward.h"

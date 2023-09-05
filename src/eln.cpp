@@ -1,5 +1,7 @@
 #include <math.h>//for INFINITY.
 
+// http://bozeman.genome.washington.edu/compbio/mbt599_2006/hmm_scaling_revised.pdf
+
 double elnsum(double elnx, double elny){
   if(elnx == -INFINITY){
     return elny;
